@@ -7,7 +7,8 @@ public class ThreadDemo extends Thread {
         threadName = name;
         this.pd = pd;
     }
-
+    
+    @Override
     public void run() {
         synchronized(pd) {
             pd.printCount();
